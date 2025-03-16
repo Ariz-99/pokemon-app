@@ -20,6 +20,7 @@ const Pokeball: React.FC = () => {
     setCaughtPokemons(updatedPokemons);
     localStorage.setItem("myPokemons", JSON.stringify(updatedPokemons));
   };
+
   return (
     <div className="flex flex-col w-full mt-10 mb-8 md:mb-10">
       <div className="grid grid-cols-2 md:grid-cols-[repeat(auto-fill,minmax(200px,1fr))] place-items-center gap-5 md:gap-15 p-6">

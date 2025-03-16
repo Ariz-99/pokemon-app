@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import game from "../../assets/game.png";
+import home from "../../assets/home.png";
 
 const Footer: React.FC = () => {
   const navigate = useNavigate();
@@ -19,11 +21,7 @@ const Footer: React.FC = () => {
           onClick={handleHome}
           className="flex flex-col items-center gap-1 cursor-pointer"
         >
-          <img
-            src="/src/assets/home.svg"
-            alt="Home"
-            className="w-6 h-6 md:w-8 md:h-8"
-          />
+          <img src={home} alt="Home" className="w-6 h-6 md:w-8 md:h-8" />
           <span>Home</span>
         </div>
 
@@ -31,11 +29,7 @@ const Footer: React.FC = () => {
           onClick={handleMyPokemon}
           className="flex flex-col items-center gap-1 cursor-pointer"
         >
-          <img
-            src="/src/assets/game.svg"
-            alt="My Pokemon"
-            className="w-6 h-6 md:w-8 md:h-8"
-          />
+          <img src={game} alt="My Pokemon" className="w-6 h-6 md:w-8 md:h-8" />
           <span>My Pokemon</span>
         </div>
       </div>
